@@ -1,0 +1,55 @@
+package zohoTest;
+
+import java.util.*;
+import java.util.Scanner;
+
+public class PattenPrint {
+
+	
+	public static void main(String[] args) {
+
+// 'tm' varible's are temporary variables
+		
+		Scanner cin=new Scanner(System.in);
+	
+		
+		
+		int input;
+		System.out.println("Enter the input");
+		input=cin.nextInt();
+		int tm1=1;
+		int tm4=1;
+		int tm5=(input*2)-2;
+		
+		for(int tm2=0;tm2<input;tm2++)
+		{
+			
+			for(int tm3=0;tm3<tm5+tm1;tm3++)
+			{
+				
+				if(tm3<tm5)
+				{
+					
+					System.out.print(" ");
+				}
+				
+				else
+				{
+				System.out.print(tm4+" ");
+				tm4++;
+			
+				}
+		}
+			System.out.println();
+	        tm5=tm5-2;
+			tm1++;
+		}
+		
+		
+		
+		
+	
+
+	}
+
+}
